@@ -12,8 +12,9 @@ class Monitor :public QObject
 Q_OBJECT
 public:
     Monitor();
+private slots:
+    void NotifyChange(const QString &path);
 private:
-    void notifyChange(const QString &path);
     QFileSystemWatcher *watcher;
     QString path;
 };
