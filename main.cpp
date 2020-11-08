@@ -1,5 +1,4 @@
 #include <QCoreApplication>
-#include <iostream>
 #include "Monitor.h"
 using namespace std;
 
