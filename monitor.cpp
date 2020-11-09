@@ -2,9 +2,9 @@
 #include "Event.h"
 Monitor::Monitor()
 {
-     //QTextStream qtin(stdin);
-     path=("C:/Users/root/Desktop/studia/semestr 5/KDM/zaj2");
-     //path=qtin.readLine();
+     QTextStream qtin(stdin);
+     //path=("C:/Users/root/Desktop");
+     path=qtin.readLine();
 
      watcher = new QFileSystemWatcher;
      watcher->addPath(path);
